@@ -1,0 +1,123 @@
+/* Estilos base para contenedores y elementos de galería */
+.galeria-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.galeria-item,
+.galeria-upload {
+    width: 155px; /* Ancho fijo para dispositivos mayores a 767px */
+    height: 155px; /* Altura fija para dispositivos mayores a 767px */
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.galeria-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para las imágenes dentro de los elementos de la galería */
+.galeria-item img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Estilos comunes para el área de subida de imagen */
+.galeria-upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    border: 3px dashed #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.video-upload:hover {
+    border: 3px dashed #007bff;
+}
+
+/* Estilos para interacciones con el área de subida */
+.galeria-upload:hover,
+.galeria-upload:focus-within {
+    border-color: #007bff;
+    background-color: #e8e8e8;
+}
+
+/* Alineación interna del botón de subida */
+.galeria-upload label,
+.galeria-upload i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.galeria-upload i {
+    font-size: 2rem; /* Cambiado de 24px a 2rem para coherencia */
+    color: #007bff;
+    pointer-events: none;
+}
+
+.galeria-upload input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* Media queries para adaptar a diferentes tamaños de pantalla */
+@media (max-width: 767px) {
+    .galeria-container {
+        justify-content: flex-start;
+    }
+
+    .galeria-item,
+    .galeria-upload {
+        flex: 0 0 23%; /* Utiliza porcentaje para el flex-basis y el width */
+        width: 23%; /* Iguala el ancho al flex-basis */
+        height: 23vw; /* Usa vw para mantener la proporción con el ancho de la pantalla */
+        max-height: 22vw;
+    }
+}
+
+.delete-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 12px;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Asegura que el botón esté por encima de la imagen */
+    display: none; /* Oculto por defecto */
+}
+
+.galeria-item img {
+    transition: opacity 0.3s ease; /* Suaviza la transición de opacidad */
+}
+
+.galeria-item.activated img {
+    opacity: 0.5; /* 80% transparente */
+}
+
+.galeria-item {
+    transition: background-color 0.3s ease; /* Suaviza la transición del color de fondo */
+    /* Los estilos existentes se mantienen aquí */
+}
+
+.galeria-item.activated {
+    background-color: black; /* Fondo negro cuando está activado */
+    opacity: 1; /* 80% transparente */
+}

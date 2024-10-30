@@ -1,0 +1,25 @@
+/* Para todos los navegadores (incluyendo WebKit) */
+html {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* Para WebKit (Chrome, Safari, incluyendo iOS) */
+html::-webkit-scrollbar {
+    display: none;
+}
+
+/* Aplica un "zoom" del 125% a todo el documento HTML en pantallas de más de 1200 píxeles de ancho */
+/*@media (min-width: 1200px) {
+    html {
+        transform: scale(1.25);
+        transform-origin: top left;
+        width: 80%;
+        overflow-x: hidden;
+    }
+}*/
+
+body {
+    background-color: rgba(12, 84, 146, 0.1);
+    min-height: 100vh;
+}

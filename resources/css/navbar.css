@@ -1,0 +1,118 @@
+.navbar {
+    background-color: var(--color-primario-azul);
+    /* Añade estilos adicionales para la barra de navegación si es necesario */
+}
+
+.nav-icon {
+    font-size: 32px;
+}
+
+#perfil {
+    padding: 0 !important;
+}
+
+.navbar .nav-link {
+    color: white;
+    /* Añade estilos adicionales para los enlaces si es necesario */
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:active {
+    color: var(--color-primario-naranja);
+}
+
+.active {
+    color: var(--color-primario-naranja) !important;
+}
+
+.titulo {
+    font-size: 22px; /* Tamaño de fuente personalizado, puedes ajustarlo según tus preferencias */
+    color: white; /* Color de texto blanco */
+}
+
+.titulo2 {
+    font-size: 18px; /* Tamaño de fuente personalizado, puedes ajustarlo según tus preferencias */
+    color: white; /* Color de texto blanco */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.titulo-container {
+    position: absolute;
+    left: 20%; /* Default for PC */
+    transform: translateX(-25%);
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    height: 100%;
+    pointer-events: none; /* Desactiva la interacción con el título */
+}
+
+@media (max-width: 1700px) {
+    .titulo-container {
+        left: 30%;
+    }
+}
+
+/* Tablet: viewport menos de 768px */
+@media (max-width: 900px) {
+    .titulo-container {
+        left: 30%;
+    }
+}
+
+/* Móvil: viewport menos de 480px */
+@media (max-width: 480px) {
+    .titulo-container {
+        left: 30%;
+    }
+}
+
+.nav-item {
+    display: flex;
+    align-items: center; /* Asegura que el contenido de cada nav-item también esté centrado verticalmente */
+}
+
+
+/* Estilo personalizado para el dropdown de la papelera */
+#papeleraDropdown {
+    background-color: #0c5492 !important;
+    color: white;
+    border: none !important; /* Quitar bordes del dropdown */
+    padding-top: 11px;
+}
+
+#papeleraDropdown.active {
+    color: #f46610 !important; /* Cambia el color del texto a naranja cuando esté activo */
+}
+
+#papeleraDropdown + .dropdown-menu {
+    background-color: #0c5492; /* Fondo del dropdown azul */
+    border: none; /* Quitar bordes del menú dropdown */
+}
+
+#papeleraDropdown + .dropdown-menu .dropdown-item {
+    color: white;
+    border: none !important; /* Quitar bordes de los items del dropdown */
+}
+
+#papeleraDropdown + .dropdown-menu .dropdown-item.active, 
+#papeleraDropdown + .dropdown-menu .dropdown-item:active {
+    color: #f46610 !important; /* Color del texto naranja cuando esté activo */
+    background-color: #0c5492 !important; /* Asegura que el fondo no cambie */
+}
+
+#papeleraDropdown + .dropdown-menu .dropdown-item:hover {
+    color: #f46610 !important; /* Cambia el color del texto a naranja cuando se hace hover */
+    background-color: #0c5492 !important; /* Mantener el fondo azul en hover */
+    border-radius: 5px;
+}

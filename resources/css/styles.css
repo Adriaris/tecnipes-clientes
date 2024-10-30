@@ -1,0 +1,114 @@
+:root {
+    --color-primario-azul: #0c5492; /* Define tu azul primario */
+    --color-primario-naranja: #f46610; /* Define tu naranja primario */
+}
+
+.bg-blue {
+    background-color: var(--color-primario-azul);
+    color: white;
+}
+
+.bg-orange {
+    background-color: var(--color-primario-naranja);
+}
+.color-blue {
+    color: var(--color-primario-azul);
+    
+}
+
+.color-orange {
+    color: var(--color-primario-naranja);
+}
+
+.border-blue{
+    border: 1px solid #0c5492;
+    border-radius: 5px;
+    padding: 7px;
+    transition: .5s;
+}
+
+.border-blue:hover{
+    color: white;
+    background-color:#0c5492;
+    
+}
+
+.blue-title {
+    font-size: 30px;
+    color: var(--color-primario-azul);
+}
+
+.blue-text {
+    color: var(--color-primario-azul) !important;
+}
+.orange-text {
+    color: var(--color-primario-naranja);
+}
+
+.ultra-red-text {
+    color: rgb(177, 18, 18);
+}
+
+.center-screen {
+    min-height: 100vh; /* Altura mínima del 100% de la altura de la ventana del navegador */
+    margin-top: 10vh;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+}
+
+/* Estilo para el botón personalizado */
+.custom-btn {
+    border: 1px solid #0c5492;
+    color: #0c5492;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    padding: 0.2rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+/* Cambia los colores en el estado hover */
+.custom-btn:hover {
+    background-color: #0c5492;
+    color: #ffffff; /* Cambiar el color del texto en hover si es necesario */
+}
+
+.custom-form label {
+    display: block;
+    padding-left: 10px;
+    color: var(
+        --color-primario-azul
+    ); /* Cambia el color del texto del label a azul */
+    font-size: 18px;
+}
+
+.custom-form i {
+    color: var(
+        --color-primario-naranja
+    ); /* Cambia el color del icono a naranja */
+}
+
+.h2-title {
+    color: var(--color-primario-azul);
+    font-weight: 600;
+}
+
+.max-width-700 {
+    max-width: 700px;
+    width: 100%; /* Toma el 100% del ancho hasta un máximo de 700px */
+    background-color: white;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    border-radius: 10px; /* Redondea los bordes (ajusta este valor según necesites) */
+    padding: 20px; /* Agrega espacio entre el contenedor y el contenido (ajusta según necesites) */
+    margin-bottom: 30px;
+}
+
+
+
+
+

@@ -1,0 +1,142 @@
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+p.card-text {
+    margin: 0;
+    padding-bottom: 2px;
+}
+h5.card-title {
+    margin: 0;
+    padding-bottom: 2px;
+}
+
+@media (max-width: 400px) {
+    td {
+        word-break: break-all;
+        hyphens: auto;
+    }
+    #basculas-table-body {
+        font-size: 12px;
+    }
+    #basculas-table-body > tr > td {
+        padding: 3px !important;
+    }
+    #basculas-table-head > tr > th {
+        padding: 3px !important;
+    }
+    #basculas-table-body > tr > td > a {
+        padding: 2px 4px 2px 4px;
+    }
+}
+
+/************************************************************DROPDAWN*************************************************/
+.dropdown-item:hover {
+    background-color: rgba(12, 84, 146, 0.1);
+    color: black;
+}
+
+.dropdown-item:focus.dropdown-item:active {
+    background-color: rgba(12, 84, 146, 0.1);
+    color: black;
+}
+
+.dropdown-item {
+    padding: 10px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.175);
+    font-size: 16px;
+}
+
+.dropdown-menu {
+    padding: 0px !important;
+}
+
+/************************************************************ETIQUETAS*************************************************/
+.bascula-status .status-container,
+a .icon-container,
+button .icon-container {
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.status-text {
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.bascula-status .icon-container,
+a .icon-container,
+button .icon-container {
+    width: 2em; /* Ajustar según el tamaño del icono */
+    height: 2em; /* Ajustar según el tamaño del icono */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bascula-status .icon-container i,
+.icon-container i {
+    padding-top: 2px;
+    font-size: 20px !important;
+}
+
+.bascula-status .text-success .icon-container,
+a .text-success,
+button .text-success {
+    background-color: rgba(40, 167, 69, 0.1); /* Verde tenue */
+    color: #198754; /* Color del icono */
+}
+
+.bascula-status .text-danger .icon-container,
+a .text-danger,
+button .text-danger {
+    background-color: rgba(220, 53, 69, 0.1); /* Rojo tenue */
+    color: #dc3545; /* Color del icono */
+}
+
+.bascula-status .text-primary .icon-container,
+a .text-primary,
+button .text-primary {
+    background-color: rgba(0, 123, 255, 0.1); /* Azul tenue */
+    color: #007bff; /* Color del icono */
+}
+
+@media (max-width: 767px) {
+    .bascula-status .status-text {
+        display: none;
+    }
+}
+
+.card .bascula-status .status-text {
+    display: none;
+}
+.dropdown-item {
+    width: 225px;
+    display: flex;
+    align-items: center; /* Alineación vertical de los elementos */
+    gap: 0.5em; /* Espacio entre el icono y el texto */
+}
+
+/*****************************************************MOVER BASCULA*****************************************************************/
+.selected-card {
+    border: 2px solid #0c5492;
+    background-color: rgba(12, 84, 146, 0.1);
+}
+
+.disabled-card {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#clientes-container {
+    max-height: 420px; /* Ajusta esta altura según tus necesidades */
+    overflow-y: auto;
+}
+

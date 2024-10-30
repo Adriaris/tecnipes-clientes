@@ -1,0 +1,64 @@
+.files-container {
+    margin: 0 auto;
+}
+
+.text-file-width {
+    width: 75%;
+}
+
+.archivo-label {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.archivo-label i {
+    display: block;
+    font-size: 24px;
+    color: #007bff;
+    padding-top: 4px;
+}
+.archivo-item {
+    position: relative;
+    padding: 5px 0px 5px 10px;
+    border: solid #dee2e6 1px;
+    border-radius: 0.375rem;
+    background-color: #f8fafc;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.archivo-title {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+.icon-file {
+    font-size: 20px;
+}
+
+.icon-file-excel {
+    color: green;
+}
+
+.icon-file-pdf {
+    color: red;
+}
+
+.icon-file-word {
+    color: blue;
+}
+
+.icon-file-txt {
+    color: gray;
+}
+
+.icon-file-default {
+    color: black; /* O cualquier color por defecto que prefieras */
+}

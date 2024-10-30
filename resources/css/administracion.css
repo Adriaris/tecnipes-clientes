@@ -1,0 +1,32 @@
+.my-container {
+    margin: 0 auto;
+}
+
+.alert {
+    margin-top: 20px;
+}
+
+.actions {
+    margin-bottom: 20px;
+}
+
+.table-responsive {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table th,
+.user-table td {
+    text-align: left;
+    padding: 12px 15px;
+}
+
+.delete-form {
+    display: inline;
+}

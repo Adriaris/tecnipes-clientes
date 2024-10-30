@@ -1,0 +1,104 @@
+.cursiva-text{
+    color: rgb(161, 161, 161);
+    font-size: 12px;
+    font-style: italic;
+
+}
+
+.input-group .form-control {
+    border-radius: 0.25rem 0 0 0.25rem; /* Redondea solo las esquinas izquierdas del input */
+    border-right: none; /* Elimina el borde derecho del input */
+}
+
+.btn-copy {
+    border-left: none;
+    border-right: none;
+    border-radius: 0; /* Borde plano sin redondeo */
+}
+
+.btn-maps {
+    border-left: none;
+    border-radius: 0 0.25rem 0.25rem 0; /* Redondea solo las esquinas derechas del último botón */
+}
+
+.btn-call {
+    border-left: none;
+    border-radius: 0 0.25rem 0.25rem 0; /* Redondea solo las esquinas derechas del último botón */
+}
+/* Estilos para :focus y :active de los inputs y botones */
+.input-group .form-control:focus,
+.input-group .form-control:active,
+.input-group button:focus,
+.input-group button:active {
+    background-color: #f8fafc !important;
+    box-shadow: none; /* Elimina la sombra para mantener la apariencia plana */
+    border-color: #dee2e6 !important;
+}
+
+/* Estilos para mantener la cohesión visual en el grupo de input */
+.input-group {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos del grupo */
+    width: 100%;
+}
+
+.input-group button {
+    border-color: #dee2e6;
+    background-color: #f8fafc;
+}
+.input-group button:hover {
+    border-color: #dee2e6;
+    background-color: #f8fafc;
+}
+
+.col > .card {
+    height: 460px; /* Altura fija para todas las tarjetas */
+}
+
+.col > .card > .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .mt-auto {
+    margin-top: auto;
+}
+
+/**********************************************CLIENTE EN BASCULA***********************************************/
+
+/* Estilo para la información de contacto */
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Proporciones para el teléfono y el botón */
+.phone {
+    flex: 0 0 40%; /* 40% del ancho del contenedor */
+    margin: 0; /* Asegúrate de que no haya margen adicional */
+}
+
+.view-client {
+    flex: 0 0 60%; /* 60% del ancho del contenedor */
+    text-align: right; /* Alinea el botón a la derecha */
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 600px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .phone,
+    .view-client {
+        flex: 1 1 100%;
+        text-align: left; /* Alinea el contenido a la izquierda en móviles */
+    }
+
+    .view-client {
+        margin-top: 10px; /* Añade un poco de espacio entre el teléfono y el botón en móviles */
+    }
+}

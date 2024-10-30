@@ -1,0 +1,8 @@
+.modal-title {
+    color: var(--color-primario-azul);
+    font-weight: 600;
+}
+
+.modal-header {
+    padding: 16px;
+}
